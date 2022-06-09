@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import "./TextTruncate.css";
+import "./textTruncate.css";
 
 type TextTruncateProps = {
   text: string,

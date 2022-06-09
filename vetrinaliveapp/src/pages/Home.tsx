@@ -22,6 +22,8 @@ import SidebarMenu from "../components/SidebarMenu";
 import Selectshop from "../components/Selectshop"
 import VisitorsWithOrders from "../components/VisitorsWithOrders"
 import MarketPlace from "../components/MarketPlace"
+import { NewsList } from "../components/NewsList"
+import ConfigureToCustomerCare from "../components/Configure-CustomerCare"
 import logo from "../images/logo.svg";
 import { Link } from "@mui/material";
 
@@ -251,6 +253,9 @@ function Home() {
                     <Stack sx={{ backgroundColor: "white" }} spacing={2}>
                     <NewsList />
                     </Stack>
+                </Grid>
+                <Grid item xs={16} md={3} lg={5} xl={6}>
+                    <ConfigureToCustomerCare />
                 </Grid>
             </Grid> 
         </Container>

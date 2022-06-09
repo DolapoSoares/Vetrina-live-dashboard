@@ -7,7 +7,6 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/dashboard" element={<Home />} />
-      {/* <Route path="*" element={<Error404 />} /> */}
     </Routes>
   );
 }

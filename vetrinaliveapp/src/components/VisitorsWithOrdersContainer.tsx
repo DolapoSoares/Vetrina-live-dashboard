@@ -58,6 +58,7 @@ const VisitorsWithOrdersContainer: FC<VisitorsWithOrdersContainerProps> = ({
         minHeight: componentHeight,
         marginBottom: 2,
         backgroundColor: backgroundColor,
+        borderRadius: "10px"
       }}
     >
       <CardContent>

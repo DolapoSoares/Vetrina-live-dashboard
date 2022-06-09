@@ -13,7 +13,7 @@ const MarketDemoPlace = () => {
     <Stack direction={{ xs: "column", md: "row" }} spacing={2}>
       <Grid item xs={16}>
         <Card
-          sx={{ maxWidth: "100%", marginBottom: 2, backgroundColor: "#F3A35C" }}
+          sx={{ maxWidth: "100%", marginBottom: 2, backgroundColor: "#F3A35C" , borderRadius: "10px"}}
         >
           <CardActionArea>
             <CardContent>

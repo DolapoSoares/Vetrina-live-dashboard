@@ -5,9 +5,9 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Grid, Link, Skeleton, styled } from "@mui/material";
-import TextTruncate from "./TextTruncate/TextTruncate";
+import TextTruncate from "./TextReform/textTruncate";
 import { NewsContext } from "../contaxt/contextNews";
-import { PayloadType } from "./models/DataStructure";
+import { Payload } from "./interface/DashboardInterface";
 
 //   TEXT DESCRIPTIONS
 const CardTitle = styled(Typography)(({ theme }) => ({
@@ -44,7 +44,7 @@ const NewsCard = () => {
   const error = state.error && <div>{state.error}</div>;
   const data =
     state.data &&
-    state.data.map((item: PayloadType, index: number) => (
+    state.data.map((item: Payload, index: number) => (
       <Grid item xs={16} lg={8} columnSpacing={2} key={index} >
         <Card elevation={0} sx={{ display: "flex", borderRadius: "0px" }} >
           {loading ? (
