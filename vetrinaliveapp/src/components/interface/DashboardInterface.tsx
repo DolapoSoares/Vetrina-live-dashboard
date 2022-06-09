@@ -14,7 +14,7 @@ export interface Payload {
     content: string;
   }
 
-  export interface Action {
+  export interface ActionType {
     type: 'FETCH_REQUEST' | 'FETCH_RESPONSE' | 'FETCH_ERROR';
     payload?: Payload[] | unknown;
   }
@@ -25,13 +25,13 @@ export interface Payload {
     error?: unknown | null;
   }
   
-  export interface SidebarItem {
+  export interface SidebarItems {
       title: string;
       path: string;
       icon?: any;
       notification?: number;
       iconOpened?: any;
       iconClosed?: any;
-      subnav?: SidebarItem[];
+      subnav?: SidebarItems[];
   }
   

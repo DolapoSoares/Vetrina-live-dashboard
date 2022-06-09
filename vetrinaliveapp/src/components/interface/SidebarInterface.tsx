@@ -16,9 +16,9 @@ import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
-import { SidebarItem } from "./DashboardInterface";
+import { SidebarItems } from "./DashboardInterface";
 
-export const SidebarUpper: SidebarItem[] = [
+export const SidebarUpper: SidebarItems[] = [
   {
     title: "Dashboard",
     path: "/dashboard",
@@ -32,11 +32,11 @@ export const SidebarUpper: SidebarItem[] = [
     iconOpened: <KeyboardArrowUpOutlinedIcon />,
     subnav: [
       {
-        title: "Catalogue 1",
+        title: "Latest Arrivals",
         path: "#",
       },
       {
-        title: "Catalogue 2",
+        title: "Collections",
         path: "#",
       },
     ],
@@ -44,7 +44,7 @@ export const SidebarUpper: SidebarItem[] = [
   {
     title: "Orders",
     path: "#",
-    notification: 4,
+    notification: 14,
     icon: <FormatListBulletedOutlinedIcon />,
   },
   {
@@ -138,7 +138,7 @@ export const SidebarUpper: SidebarItem[] = [
     icon: <LogoutOutlinedIcon />,
   },
 ];
-export const SidebarLower: SidebarItem[] = [
+export const SidebarLower: SidebarItems[] = [
   {
     title: "Customer Support",
     path: "#",
